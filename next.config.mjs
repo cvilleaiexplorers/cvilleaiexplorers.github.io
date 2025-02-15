@@ -9,7 +9,8 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',  // Enable static exports
-  basePath: process.env.NODE_ENV === 'production' ? '/cville-ai-explorers-website' : '', // Replace with your repo name
+  basePath: process.env.NODE_ENV === 'production' ? '/cville-ai-explorers-website' : '', 
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/cville-ai-explorers-website' : '',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -18,7 +19,7 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-  },
+},
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,

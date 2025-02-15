@@ -16,7 +16,13 @@ export default function SponsorsCard() {
           rel="noopener noreferrer"
           className="hover:opacity-80 transition-opacity"
         >
-          <Image src="/STUDIO_IX_Logo_White.jpg" alt="Studio IX Logo" width={200} height={100} className="mb-4" />
+          <img 
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/STUDIO_IX_Logo_White.jpg`}
+            alt="Studio IX Logo" 
+            width={200} 
+            height={100} 
+            className="mb-4"
+          />
         </a>
         <p className="text-gray-300 text-lg mb-4 text-center">
           Studio IX is a coworking space in downtown Charlottesville, Virginia, designed for freelancers, entrepreneurs,
