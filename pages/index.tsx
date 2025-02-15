@@ -2,6 +2,7 @@
 
 import Layout from "../components/layout"
 import AIGraphic from "../components/ai-graphic"
+import SponsorsCard from "../components/sponsors-card"
 import { useEffect } from "react"
 
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
           id="about"
           className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg p-8 relative overflow-hidden"
         >
-          <h2 className="text-3xl font-bold text-blue-400 mb-6">About Us</h2>
+          <h2 className="text-3xl font-bold section-header mb-6">About Us</h2>
           <p className="text-gray-300 text-lg mb-4">
             We are a group of builders, learners, and enthusiasts who gather to:
           </p>
@@ -72,7 +73,7 @@ export default function Home() {
           id="mission"
           className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg p-8 relative overflow-hidden"
         >
-          <h2 className="text-3xl font-bold text-purple-400 mb-6">Our Mission</h2>
+          <h2 className="text-3xl font-bold section-header mb-6">Our Mission</h2>
           <p className="text-gray-300 text-lg">
             Our mission is to foster a community where people can develop AI building skills through hands-on projects,
             technical sharing, and collaborative learning, and discover practical ways to integrate AI tools into their
@@ -85,7 +86,7 @@ export default function Home() {
           id="activities"
           className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg p-8 relative overflow-hidden"
         >
-          <h2 className="text-3xl font-bold text-blue-400 mb-6">Activities and Directions</h2>
+          <h2 className="text-3xl font-bold section-header mb-6">Activities and Directions</h2>
           <ul className="list-disc list-inside text-gray-300 text-lg space-y-2">
             <li>Exploring modern AI platforms and workflow tools</li>
             <li>Technical demos and talks from AI builders</li>
@@ -98,7 +99,7 @@ export default function Home() {
           id="join"
           className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg p-8 relative overflow-hidden"
         >
-          <h2 className="text-3xl font-bold text-purple-400 mb-6">Join Us</h2>
+          <h2 className="text-3xl font-bold section-header mb-6">Join Us</h2>
           <p className="text-gray-300 text-lg mb-4">
             Whether you're actively building AI applications or eager to learn how, there's a place for you in our
             community. We emphasize practical skills and implementation while maintaining an inclusive environment for
@@ -118,12 +119,22 @@ export default function Home() {
           id="code-of-conduct"
           className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg p-8 relative overflow-hidden"
         >
-          <h2 className="text-3xl font-bold text-blue-400 mb-6">Code of Conduct</h2>
+          <h2 className="text-3xl font-bold section-header mb-6">Code of Conduct</h2>
           <p className="text-gray-300 text-lg">
-            We are committed to providing a welcoming and harassment-free experience for everyone. We expect all members
-            to be respectful and supportive of each other.
+            Cville AI Explorers follows the{" "}
+            <a
+              href="https://github.com/cville/conduct"
+              className="text-blue-400 hover:text-blue-300 underline transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cville Slack Code of Conduct
+            </a>
+            .
           </p>
         </section>
+
+        <SponsorsCard />
       </div>
     </Layout>
   )
