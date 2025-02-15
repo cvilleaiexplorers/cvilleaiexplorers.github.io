@@ -1,3 +1,4 @@
+// next.config.mjs
 let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
@@ -7,6 +8,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',  // Enable static exports
+  basePath: process.env.NODE_ENV === 'production' ? '/cville-ai-explorers-website' : '', // Replace with your repo name
   eslint: {
     ignoreDuringBuilds: true,
   },
