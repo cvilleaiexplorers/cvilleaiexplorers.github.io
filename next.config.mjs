@@ -9,8 +9,8 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',  // Enable static exports
-  basePath: process.env.NODE_ENV === 'production' ? '/cville-ai-explorers-website' : '', 
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/cville-ai-explorers-website' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '' : '', 
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   eslint: {
     ignoreDuringBuilds: true,
   },
