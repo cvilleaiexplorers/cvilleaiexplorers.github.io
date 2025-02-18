@@ -116,6 +116,45 @@ export default function Home() {
         </section>
 
         <section
+          id="contact"
+          className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg p-8 relative overflow-hidden"
+        >
+          <h2 className="text-3xl font-bold section-header mb-6">Contact</h2>
+          <p className="text-gray-300 text-lg">
+            Cville AI Explorers operates under the{" "}
+            <a
+              href="https://www.meetup.com/cville-tech/"
+              className="text-blue-400 hover:text-blue-300 underline transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Charlottesville Technologists meetup
+            </a>
+            . Contact organizers in the{" "}
+            <a
+              href="https://cville.slack.com/archives/C08DTL1TS1K"
+              className="text-blue-400 hover:text-blue-300 underline transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              #cvilleaiexplorers
+            </a>
+            {" "}channel on{" "}
+            <a
+              href="https://cville.slack.com"
+              className="text-blue-400 hover:text-blue-300 underline transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cville Slack
+            </a>
+            .
+          </p>
+        </section>
+
+        <SponsorsCard />
+
+        <section
           id="code-of-conduct"
           className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg p-8 relative overflow-hidden"
         >
@@ -133,8 +172,6 @@ export default function Home() {
             .
           </p>
         </section>
-
-        <SponsorsCard />
       </div>
     </Layout>
   )

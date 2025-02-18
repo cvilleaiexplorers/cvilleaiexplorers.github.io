@@ -37,7 +37,7 @@ export default function SponsorsCard() {
         {isExpanded && (
           <div className="mt-4 text-gray-300">
             <p className="mb-2">
-              It offers a flexible shared office environment with options for open workspaces, dedicated desks, and
+              Studio IX offers a flexible shared office environment with options for open workspaces, dedicated desks, and
               private offices. The space fosters a collaborative community through weekly events and mixers, featuring a
               'warm industrial' atmosphere with ample natural light.
             </p>
