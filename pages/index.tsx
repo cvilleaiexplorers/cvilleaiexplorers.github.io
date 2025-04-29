@@ -43,7 +43,7 @@ export default function Home() {
           <p className="text-2xl font-semibold text-blue-400">
             Next Meetup:{" "}
             <a
-              href="https://www.meetup.com/cville-tech/"
+              href="https://www.meetup.com/cville-tech/events/307524157/"
               className="underline hover:text-blue-300 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
