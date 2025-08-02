@@ -6,7 +6,7 @@ import SponsorsCard from "../components/sponsors-card"
 import { useEffect } from "react"
 
 export default function Home() {
-  const nextMeetupDate = "July 22, 2025"
+  const nextMeetupDate = "August 26, 2025"
 
   useEffect(() => {
     const smoothScroll = (e: Event) => {
@@ -43,7 +43,7 @@ export default function Home() {
           <p className="text-2xl font-semibold text-blue-400">
             Next Meetup:{" "}
             <a
-              href="https://www.meetup.com/cville-tech/events/308845984"
+              href="https://www.meetup.com/cville-tech/events/310284299"
               className="underline hover:text-blue-300 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
