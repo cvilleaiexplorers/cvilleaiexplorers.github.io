@@ -3,10 +3,48 @@
 import Layout from "../components/layout"
 import AIGraphic from "../components/ai-graphic"
 import SponsorsCard from "../components/sponsors-card"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import meetupData from "../data/meetup.json"
 
 export default function Home() {
-  const nextMeetupDate = "August 26, 2025"
+  const [meetupInfo, setMeetupInfo] = useState<{
+    displayDate: string
+    url: string
+    isPast: boolean
+  }>({
+    displayDate: "",
+    url: "",
+    isPast: false,
+  })
+
+  useEffect(() => {
+    // Parse date in local timezone to avoid timezone shifts
+    const [year, month, day] = meetupData.date.split("-").map(Number)
+    const meetupDate = new Date(year, month - 1, day)
+    const today = new Date()
+    today.setHours(0, 0, 0, 0)
+
+    const isPast = meetupDate < today
+
+    if (isPast) {
+      setMeetupInfo({
+        displayDate: "TBA: Check Meetup Page",
+        url: meetupData.fallbackUrl,
+        isPast: true,
+      })
+    } else {
+      const formattedDate = meetupDate.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+      setMeetupInfo({
+        displayDate: formattedDate,
+        url: meetupData.eventUrl,
+        isPast: false,
+      })
+    }
+  }, [])
 
   useEffect(() => {
     const smoothScroll = (e: Event) => {
@@ -43,12 +81,12 @@ export default function Home() {
           <p className="text-2xl font-semibold text-blue-400">
             Next Meetup:{" "}
             <a
-              href="https://www.meetup.com/cville-tech/events/310284299"
+              href={meetupInfo.url}
               className="underline hover:text-blue-300 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {nextMeetupDate}
+              {meetupInfo.displayDate}
             </a>
           </p>
         </section>
