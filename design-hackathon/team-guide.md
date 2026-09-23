@@ -75,7 +75,7 @@ Pick any tool, but add a constraint that forces a real point of view:
 
 1. **Brief (5 min).** Agree on who the site is for and how it should *feel*. Pick 3 adjectives, such as "curious, hands-on, local," not "modern and clean."
 2. **Diverge (15 min).** Get **at least 3 clearly different concepts** before committing to one. The first generation is almost always the most generic. Save screenshots of every concept as you go.
-3. **Converge (5 min).** Pick one, or combine the best parts of two. Write down *why*.
+3. **Converge (5 min).** Pick one, or combine the best parts of two. Write down *why*, and run the plan past a hostile reviewer agent (see section 4) before you build.
 4. **Build (25 min).** Make every piece of content from `site-content.md` work, including the "TBA" meetup state and the sponsor details.
 5. **Critique and polish (10 min).** Screenshot it, ask the AI to critique it harshly, fix the top 3 issues, and check it at phone width.
 
@@ -90,6 +90,7 @@ Pick any tool, but add a constraint that forces a real point of view:
 | **Godly** (godly.website) | Striking, motion-heavy sites |
 | **Awwwards** (awwwards.com) | Award-winning, experimental work |
 | **Land-book**, **Lapa Ninja**, **One Page Love** | Landing pages and one-page sites (closest to ours) |
+| **Mobbin** (mobbin.com) | Screens and user flows from real, shipping apps and sites. Also has an **MCP server** (mobbin.com/mcp), so your agent can search it directly for references while it designs (see below). |
 | **SiteInspire**, **Minimal Gallery** | Calmer, typography-led design |
 | **Typewolf**, **Fonts In Use** | Font pairings seen in real use |
 | **Coolors**, **Realtime Colors** | Building and previewing a palette |
@@ -99,6 +100,7 @@ Pick any tool, but add a constraint that forces a real point of view:
 - Collect 3–5 references and say *what specifically* you like in each: "the huge serif headline," "the way the date is the hero," "only two colors."
 - Mix references from different places, such as one site for type, one poster for color, one app for layout. Copying a single site gives you a clone.
 - Give the screenshots to your tool together with your notes.
+- **Let the agent do the searching (Mobbin MCP).** Mobbin's MCP server connects Claude Code, Claude Desktop, Cursor, Codex and Lovable to its library of more than 600,000 real app screens. It's hosted, so there's nothing to install: add the server and sign in. Then ask something like "Find 5 real examples of event-announcement heroes and community sign-up sections, and tell me what patterns they share." Beta usage is unlimited, but it needs a paid Mobbin plan, so check who on the team has one.
 
 ---
 
@@ -119,6 +121,15 @@ Pick any tool, but add a constraint that forces a real point of view:
 **Plan before building.** This comes from OpenAI's frontend guidance and works with any tool:
 
 > Before writing code, give me: (1) a **visual thesis**: the mood, materials and energy in one sentence; (2) a **content plan**: the order of hero, supporting sections, details and call to action; (3) an **interaction thesis**: 2–3 motion or interaction ideas.
+
+**Work the plan together, then have it attacked.** Don't accept the first plan and jump straight into code. Go back and forth with the AI until the plan feels right, then have a *second* agent tear it apart before anyone builds anything:
+
+1. **Refine it together.** "Ask me 3 questions that would most change this design." "What's the weakest part of this plan?" Revise until you'd defend every choice.
+2. **Get a hostile review.** Open a fresh session or a different tool (Claude reviewing a Codex plan, or the other way around, works well). Give it only the content and the plan:
+   > You are a skeptical senior designer reviewing this plan for a meetup website. Find the biggest problems: generic choices, weak hierarchy, poor fit for the audience, readability or accessibility issues, and anything that won't work on a phone. Be blunt, rank the issues and propose a fix for each.
+3. **Take it back to the builder.** Paste the critique into your main session, decide which points to accept, and update the plan and `DESIGN.md` *before* you start building.
+
+This takes 5 minutes and is much cheaper than finding the same problems after 25 minutes of building.
 
 **Push past the first answer:**
 - "That's too safe. Make direction 2 twice as bold."
