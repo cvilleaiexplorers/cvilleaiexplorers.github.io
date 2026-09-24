@@ -1,12 +1,14 @@
-# Design Hackathon: Choosing Your Tool
+# Design Hackathon: Team Lead Guide
 
-Each team picks one lane and one main tool ahead of time, so that at the showcase we're comparing *approaches*, not just results. Tell the organizers which one you picked so that teams don't all choose the same tool. Tool features and free tiers change quickly, so check access when you choose.
+This guide is for team leads. Before the meetup, you choose your team's lane and tool and get it set up. Your team members follow `team-guide.md`.
 
-Once your team has a tool, see "Before the meetup" in `team-guide.md` for setup and prep.
+1. **Choose a lane and tool** from the lanes below. Each team picks one lane and one main tool, so that at the showcase we're comparing *approaches*, not just results. Tell the organizers which one you picked so that teams don't all choose the same tool.
+2. **Set it up** using the [setup checklist](#setup-checklist). Every minute spent signing up or installing on the day comes out of your 60 minutes.
+3. **Brief your team.** Share `team-guide.md`, and tell them whether they need to bring a lookbook (required for Lane D, optional otherwise).
 
 ---
 
-## Lanes
+## Choosing a lane
 
 ### Lane A: AI design canvas (design first, code second)
 You describe the site, get visual mockups on a canvas, refine them by pointing and prompting, then export the code to run locally.
@@ -66,3 +68,30 @@ Pick any tool, but add a constraint that forces a real point of view:
 - **A named style:** Swiss/International, brutalist, editorial magazine, retro terminal, 1970s national-park poster, Y2K, risograph zine.
 - **Local roots:** base the look on Charlottesville, such as the Blue Ridge, the Downtown Mall's brick, or UVA's architecture.
 - **Tool relay:** ideate in one tool, mock up in a second, build in a third, and report what got lost at each hand-off.
+
+---
+
+## Setup checklist
+
+Do this before the meetup, on the laptop that will run the tool on the day. Tool features and free tiers change quickly, so don't leave it to the last minute.
+
+- [ ] Make sure you (or a teammate) have an account with enough access: a paid plan where the tool needs one, or free credits left for the day.
+- [ ] Try the tool once with a small throwaway prompt, so you know where the chat, preview and export controls are.
+- [ ] If your team is bringing a lookbook, check that the tool accepts images and how you add them (upload, paste, or files in the project folder for a coding agent).
+- [ ] Find out how to export the code and run it locally, whether that's opening an HTML file or starting a dev server.
+- [ ] Download `site-content.md`, `past-meetups.md` and `STUDIO_IX_Logo_White.jpg` from this folder.
+- [ ] Know how your agent can see the page it builds: the Claude desktop app's Browser pane (Cmd/Ctrl+Shift+B), the Codex app's built-in browser, or a Playwright tool or skill on a CLI-only setup.
+
+**Lane C (coding agent + design skill)**
+- [ ] Install and sign in to your agent, and update it to the latest version.
+- [ ] Install Node.js if you're using a skill that installs with `npx` (Impeccable, OpenAI's frontend-skill).
+- [ ] Install your design skill in a fresh project folder and confirm its commands show up:
+  - Impeccable: `npx impeccable install`
+  - frontend-design: `/plugin install frontend-design@claude-plugins-official`
+  - frontend-skill: `npx skills add https://github.com/openai/skills --skill frontend-skill`
+- [ ] For `/design`: check that Claude Code is v2.1.233 or later and signed in with a Pro, Max, Team or Enterprise plan.
+- [ ] If you're running a head-to-head experiment, agree on it with the other team.
+
+**Lane D (reference-driven)**
+- [ ] For the Mobbin MCP server: sign in to a paid Mobbin plan and connect the server to your agent.
+- [ ] For ChatGPT Images 2.0: confirm you can generate an image in ChatGPT or Codex.

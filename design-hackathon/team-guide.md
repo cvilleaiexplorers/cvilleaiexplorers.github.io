@@ -6,40 +6,13 @@
 
 **Scope: local only.** Build and run your design on your own laptop (or inside your tool's preview). The goal is a working site with a cohesive look and feel across every section. Don't spend time on deploying, hosting, custom domains or Git. Deploying will happen separately, later, once we've picked the designs we like best. If your tool can publish, you're welcome to use that for a quick preview, but it isn't part of the challenge.
 
-**Your tool:** each team chooses a lane and tool ahead of time (see `tool-selection.md`). This guide starts once that's done.
+**Your tool:** your team lead chooses the lane and tool and sets it up before the meetup (see `team-lead-guide.md`). This guide is for team members.
 
 ---
 
-## 1. Before the meetup
+## 1. Before the meetup: build a lookbook
 
-Every minute spent signing up or installing on the day comes out of your 60 minutes, so do this beforehand, ideally on the laptop you'll bring.
-
-### Set up your tool
-
-- [ ] Make sure at least one teammate has an account with enough access: a paid plan where the tool needs one, or free credits left for the day.
-- [ ] Try the tool once with a small throwaway prompt, so you know where the chat, preview and export controls are.
-- [ ] If you're bringing a lookbook, check that the tool accepts images and how you add them (upload, paste, or files in the project folder for a coding agent).
-- [ ] Find out how to export the code and run it locally, whether that's opening an HTML file or starting a dev server.
-- [ ] Download `site-content.md`, `past-meetups.md` and `STUDIO_IX_Logo_White.jpg` from this folder.
-- [ ] Know how your agent can see the page it builds: the Claude desktop app's Browser pane (Cmd/Ctrl+Shift+B), the Codex app's built-in browser, or a Playwright tool or skill on a CLI-only setup.
-
-**Lane C (coding agent + design skill)**
-- [ ] Install and sign in to your agent, and update it to the latest version.
-- [ ] Install Node.js if you're using a skill that installs with `npx` (Impeccable, OpenAI's frontend-skill).
-- [ ] Install your design skill in a fresh project folder and confirm its commands show up:
-  - Impeccable: `npx impeccable install`
-  - frontend-design: `/plugin install frontend-design@claude-plugins-official`
-  - frontend-skill: `npx skills add https://github.com/openai/skills --skill frontend-skill`
-- [ ] For `/design`: check that Claude Code is v2.1.233 or later and signed in with a Pro, Max, Team or Enterprise plan.
-- [ ] If you're running a head-to-head experiment, agree on it with the other team.
-
-**Lane D (image-first)**
-- [ ] For the Mobbin MCP server: sign in to a paid Mobbin plan and connect the server to your agent.
-- [ ] For ChatGPT Images 2.0: confirm you can generate an image in ChatGPT or Codex.
-
-### Build a lookbook (required for Lane D, optional for other lanes)
-
-A lookbook is the starting point for Lane D. Other teams can bring one too if they have time; it's a good way to give the tool a stronger point of view.
+**Required for Lane D, optional for other lanes.** Your team lead will tell you which lane your team is in. A lookbook is the starting point for Lane D. Other teams can bring one too if they have time; it's a good way to give the tool a stronger point of view.
 
 Each team member brings **2–3 examples** of design they like: screenshots of sites, posters, apps or photos. They don't need to be meetup sites or even websites.
 
