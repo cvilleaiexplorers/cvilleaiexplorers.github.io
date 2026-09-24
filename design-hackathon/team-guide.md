@@ -6,15 +6,54 @@
 
 **Scope: local only.** Build and run your design on your own laptop (or inside your tool's preview). The goal is a working site with a cohesive look and feel across every section. Don't spend time on deploying, hosting, custom domains or Git. Deploying will happen separately, later, once we've picked the designs we like best. If your tool can publish, you're welcome to use that for a quick preview, but it isn't part of the challenge.
 
-**Your tool:** your team chose a lane and tool before the event. If you need a refresher on your tool or its setup, see `tool-selection.md`.
+**Your tool:** each team chooses a lane and tool ahead of time (see `tool-selection.md`). This guide starts once that's done.
 
 ---
 
-## 1. Suggested workflow (60 minutes)
+## 1. Before the meetup
 
-1. **Brief (5 min).** Agree on who the site is for and how it should *feel*. Pick 3 adjectives, such as "curious, hands-on, local," not "modern and clean."
-2. **Diverge (15 min).** Get **at least 3 clearly different concepts** before committing to one. The first generation is almost always the most generic. Save screenshots of every concept as you go. If you collected references, give the screenshots to your tool together with your notes.
-3. **Converge (5 min).** Pick one, or combine the best parts of two. Write down *why*. Getting a second opinion on the plan before you build can save time later (see section 2).
+Every minute spent signing up or installing on the day comes out of your 60 minutes, so do this beforehand, ideally on the laptop you'll bring.
+
+### Set up your tool
+
+- [ ] Make sure at least one teammate has an account with enough access: a paid plan where the tool needs one, or free credits left for the day.
+- [ ] Try the tool once with a small throwaway prompt, so you know where the chat, preview and export controls are.
+- [ ] Check that the tool accepts images and how you add them (upload, paste, or files in the project folder for a coding agent). You'll need this for your lookbook.
+- [ ] Find out how to export the code and run it locally, whether that's opening an HTML file or starting a dev server.
+- [ ] Download `site-content.md`, `past-meetups.md` and `STUDIO_IX_Logo_White.jpg` from this folder.
+- [ ] Know how your agent can see the page it builds: the Claude desktop app's Browser pane (Cmd/Ctrl+Shift+B), the Codex app's built-in browser, or a Playwright tool or skill on a CLI-only setup.
+
+**Lane C (coding agent + design skill)**
+- [ ] Install and sign in to your agent, and update it to the latest version.
+- [ ] Install Node.js if you're using a skill that installs with `npx` (Impeccable, OpenAI's frontend-skill).
+- [ ] Install your design skill in a fresh project folder and confirm its commands show up:
+  - Impeccable: `npx impeccable install`
+  - frontend-design: `/plugin install frontend-design@claude-plugins-official`
+  - frontend-skill: `npx skills add https://github.com/openai/skills --skill frontend-skill`
+- [ ] For `/design`: check that Claude Code is v2.1.233 or later and signed in with a Pro, Max, Team or Enterprise plan.
+- [ ] If you're running a head-to-head experiment, agree on it with the other team.
+
+**Lane D (image-first)**
+- [ ] For the Mobbin MCP server: sign in to a paid Mobbin plan and connect the server to your agent.
+- [ ] For ChatGPT Images 2.0: confirm you can generate an image in ChatGPT or Codex.
+
+### Build a lookbook
+
+Each team member brings **2–3 examples** of design they like: screenshots of sites, posters, apps or photos. They don't need to be meetup sites or even websites.
+
+- **Add a one-line note to each** saying *what specifically* you like: "the huge serif headline," "the way the date is the hero," "only two colors." A screenshot with no note tells the tool very little.
+- **Aim for variety across the team,** such as one example for type, one for color and one for layout. Copying a single site gives you a clone.
+- **Put them in one shared place** (a folder or a shared doc) so they're ready to upload on the day.
+
+Good places to look: **Godly** and **Awwwards** (striking, experimental), **Land-book**, **Lapa Ninja** and **One Page Love** (landing pages, closest to ours), **Mobbin** (real apps and sites), **SiteInspire** and **Minimal Gallery** (calm, typography-led), **Typewolf** and **Fonts In Use** (font pairings), and other community and meetup sites (how they handle "next event" and "join us").
+
+---
+
+## 2. Suggested workflow (60 minutes)
+
+1. **Brief (5 min).** Agree on who the site is for and how it should *feel*. Pick 3 adjectives, such as "curious, hands-on, local," not "modern and clean." Pool your lookbook and pick the 3–5 examples that best fit those adjectives. Giving the tool every example tends to average them into mush.
+2. **Diverge (15 min).** Get **at least 3 clearly different concepts** before committing to one. The first generation is almost always the most generic. Save screenshots of every concept as you go. Give the tool your chosen lookbook examples along with their notes.
+3. **Converge (5 min).** Pick one, or combine the best parts of two. Write down *why*. Getting a second opinion on the plan before you build can save time later (see section 3).
 4. **Build (25 min).** Make every piece of content from `site-content.md` work, including the "TBA" meetup state and the sponsor details.
 5. **Critique and polish (10 min).** Screenshot it, ask the AI to critique it harshly, fix the top 3 issues, and check it at phone width. Common problems to look for:
    - The generic "AI SaaS" look: purple/blue gradients, glassy cards, everything-centered hero.
@@ -25,11 +64,12 @@
 
 ---
 
-## 2. Prompting ideas
+## 3. Prompting ideas
 
 These are ideas that have worked for other people, not steps to follow. Use whatever suits your tool and your team and skip the rest. Finding out what works is part of the experiment.
 
 - **Give it a real brief.** "Make it look modern" gets you the average of the internet. Tell the tool who the site is for (local developers, tinkerers, curious newcomers), give it your 3 adjectives, name the most important thing on the page (the next meetup and how to join), and say what you *don't* want, such as purple gradients, glassy cards or the default Inter font.
+- **Use your lookbook.** Ask for directions that each lean on a *different* example, so the concepts actually differ. Ask it to capture the feel of an example without copying it.
 - **Ask for options before code.** Several clearly different directions, each with a name, a palette, a font pairing and one signature detail, make the generic one easier to spot. Asking for variety in tone, density or era helps them actually differ.
 - **Compare cheaply.** Rough mockups of just the hero and one section are often enough to choose between directions.
 - **Have it plan first.** Some tools do better when they describe the idea before building it: the mood in one sentence, the order of sections, and a couple of interaction ideas. OpenAI's frontend guidance calls these a visual thesis, a content plan and an interaction thesis.
@@ -40,17 +80,17 @@ These are ideas that have worked for other people, not steps to follow. Use what
 
 ---
 
-## 3. Showcase (5 min per team)
+## 4. Showcase (5 min per team)
 
 1. **Show it.** Demo the site running locally (or in your tool's preview), including a narrow phone-width view.
-2. **The journey.** Show one screenshot of a concept you rejected and explain why.
+2. **The journey.** Show one lookbook example and what it turned into, or a concept you rejected and why.
 3. **Tool verdict.** Where did the tool save you time, where did it fight you, and would you use it again?
 
 Possible awards: **Most striking** · **Best experience on a phone** · **Best use of the tool** · **Best story of what went wrong**
 
 ---
 
-## 4. Stretch goals (if you finish early)
+## 5. Stretch goals (if you finish early)
 
 - **Past Meetups section.** Add a "Past Meetups" section, portfolio or timeline built from `past-meetups.md`. It has 17 meetups with dates, speakers and short summaries, and it tests how your tool handles a larger set of repeating content.
 - **The road not taken.** Put together a short slideshow or portfolio page of your discarded concepts and iterations: what each one was, and why you dropped it or changed it. This is where the screenshots from the Diverge step pay off. It can also be your "journey" segment at the showcase.

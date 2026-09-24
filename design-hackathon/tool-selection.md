@@ -1,8 +1,8 @@
 # Design Hackathon: Choosing Your Tool
 
-**Read this before the event.** Each team picks one lane and one main tool ahead of time, so that at the showcase we're comparing *approaches*, not just results. On the day, you'll follow `team-guide.md`.
+Each team picks one lane and one main tool ahead of time, so that at the showcase we're comparing *approaches*, not just results. Tell the organizers which one you picked so that teams don't all choose the same tool. Tool features and free tiers change quickly, so check access when you choose.
 
-Tool features and free tiers change quickly, so work through the [setup checklist](#setup-checklist) before the event. Every minute spent signing up or installing on the day comes out of your 60 minutes.
+Once your team has a tool, see "Before the meetup" in `team-guide.md` for setup and prep.
 
 ---
 
@@ -50,8 +50,8 @@ Use a general coding agent in a local folder, and give it a *design skill*: a se
 - Give two teams the same agent, one with a design skill and one without, and compare.
 - Pit **Claude Code + frontend-design** against **Codex + frontend-skill**: same content, same time, different vendor.
 
-### Lane D: Reference-driven (image to code)
-Start from pictures instead of words. Build a mood board of 3–5 sites, posters or photos you love, then give the screenshots to any tool that accepts images (Claude, Stitch, v0, Lovable, a coding agent). Ask it to capture the *feel* of the references without copying any of them.
+### Lane D: Image-first (image to code)
+Every team brings a lookbook, but in this lane images are the main input rather than a supporting one. Instead of describing the site in words, you generate or gather images of it and have a tool build from them.
 
 **Good for:** teams who have a look in mind but can't put it into words.
 
@@ -66,46 +66,3 @@ Pick any tool, but add a constraint that forces a real point of view:
 - **A named style:** Swiss/International, brutalist, editorial magazine, retro terminal, 1970s national-park poster, Y2K, risograph zine.
 - **Local roots:** base the look on Charlottesville, such as the Blue Ridge, the Downtown Mall's brick, or UVA's architecture.
 - **Tool relay:** ideate in one tool, mock up in a second, build in a third, and report what got lost at each hand-off.
-
----
-
-## Setup checklist
-
-Do this before the event, ideally on the laptop you'll bring.
-
-**Every team**
-- [ ] Decide your lane and main tool, and tell the organizers so teams don't all pick the same one.
-- [ ] Make sure at least one teammate has an account with enough access: a paid plan where the tool needs one, or free credits left for the day.
-- [ ] Try the tool once with a small throwaway prompt, so you know where the chat, preview and export controls are.
-- [ ] Find out how to export the code and run it locally, whether that's opening an HTML file or starting a dev server.
-- [ ] Download `site-content.md`, `past-meetups.md` and `STUDIO_IX_Logo_White.jpg` from this folder.
-- [ ] Know how your agent can see the page it builds: the Claude desktop app's Browser pane (Cmd/Ctrl+Shift+B), the Codex app's built-in browser, or a Playwright tool or skill on a CLI-only setup.
-
-**Lane C (coding agent + design skill)**
-- [ ] Install and sign in to your agent, and update it to the latest version.
-- [ ] Install Node.js if you're using a skill that installs with `npx` (Impeccable, OpenAI's frontend-skill).
-- [ ] Install your design skill in a fresh project folder and confirm its commands show up:
-  - Impeccable: `npx impeccable install`
-  - frontend-design: `/plugin install frontend-design@claude-plugins-official`
-  - frontend-skill: `npx skills add https://github.com/openai/skills --skill frontend-skill`
-- [ ] For `/design`: check that Claude Code is v2.1.233 or later and signed in with a Pro, Max, Team or Enterprise plan.
-- [ ] If you're running a head-to-head experiment, agree on it with the other team.
-
-**Lane D (reference-driven)**
-- [ ] For the Mobbin MCP server: sign in to a paid Mobbin plan and connect the server to your agent.
-- [ ] For ChatGPT Images 2.0: confirm you can generate an image in ChatGPT or Codex.
-
-**Optional homework: collect references**
-
-Save 3–5 screenshots you like and write one line on *what specifically* you like in each: "the huge serif headline," "the way the date is the hero," "only two colors." Mix sources, such as one site for type, one poster for color and one app for layout, because copying a single site gives you a clone.
-
-| Source | Best for |
-|---|---|
-| **Godly** (godly.website) | Striking, motion-heavy sites |
-| **Awwwards** (awwwards.com) | Award-winning, experimental work |
-| **Land-book**, **Lapa Ninja**, **One Page Love** | Landing pages and one-page sites (closest to ours) |
-| **Mobbin** (mobbin.com) | Screens and user flows from real, shipping apps and sites |
-| **SiteInspire**, **Minimal Gallery** | Calmer, typography-led design |
-| **Typewolf**, **Fonts In Use** | Font pairings seen in real use |
-| **Coolors**, **Realtime Colors** | Building and previewing a palette |
-| Other community and meetup sites | How other groups handle "next event" and "join us" |
