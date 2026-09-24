@@ -50,8 +50,8 @@ Use a general coding agent in a local folder, and give it a *design skill*: a se
 - Give two teams the same agent, one with a design skill and one without, and compare.
 - Pit **Claude Code + frontend-design** against **Codex + frontend-skill**: same content, same time, different vendor.
 
-### Lane D: Image-first (image to code)
-Every team brings a lookbook, but in this lane images are the main input rather than a supporting one. Instead of describing the site in words, you generate or gather images of it and have a tool build from them.
+### Lane D: Reference-driven (image to code)
+Start from pictures instead of words. Each team member collects a lookbook of examples before the meetup (required for this lane; see "Before the meetup" in `team-guide.md`). On the day, give the chosen screenshots and notes to any tool that accepts images (Claude, Stitch, v0, Lovable, a coding agent) and ask it to capture the *feel* of the examples without copying any of them. Other lanes can bring a lookbook too, but for them it's optional.
 
 **Good for:** teams who have a look in mind but can't put it into words.
 

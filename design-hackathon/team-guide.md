@@ -18,7 +18,7 @@ Every minute spent signing up or installing on the day comes out of your 60 minu
 
 - [ ] Make sure at least one teammate has an account with enough access: a paid plan where the tool needs one, or free credits left for the day.
 - [ ] Try the tool once with a small throwaway prompt, so you know where the chat, preview and export controls are.
-- [ ] Check that the tool accepts images and how you add them (upload, paste, or files in the project folder for a coding agent). You'll need this for your lookbook.
+- [ ] If you're bringing a lookbook, check that the tool accepts images and how you add them (upload, paste, or files in the project folder for a coding agent).
 - [ ] Find out how to export the code and run it locally, whether that's opening an HTML file or starting a dev server.
 - [ ] Download `site-content.md`, `past-meetups.md` and `STUDIO_IX_Logo_White.jpg` from this folder.
 - [ ] Know how your agent can see the page it builds: the Claude desktop app's Browser pane (Cmd/Ctrl+Shift+B), the Codex app's built-in browser, or a Playwright tool or skill on a CLI-only setup.
@@ -37,7 +37,9 @@ Every minute spent signing up or installing on the day comes out of your 60 minu
 - [ ] For the Mobbin MCP server: sign in to a paid Mobbin plan and connect the server to your agent.
 - [ ] For ChatGPT Images 2.0: confirm you can generate an image in ChatGPT or Codex.
 
-### Build a lookbook
+### Build a lookbook (required for Lane D, optional for other lanes)
+
+A lookbook is the starting point for Lane D. Other teams can bring one too if they have time; it's a good way to give the tool a stronger point of view.
 
 Each team member brings **2–3 examples** of design they like: screenshots of sites, posters, apps or photos. They don't need to be meetup sites or even websites.
 
@@ -51,8 +53,8 @@ Good places to look: **Godly** and **Awwwards** (striking, experimental), **Land
 
 ## 2. Suggested workflow (60 minutes)
 
-1. **Brief (5 min).** Agree on who the site is for and how it should *feel*. Pick 3 adjectives, such as "curious, hands-on, local," not "modern and clean." Pool your lookbook and pick the 3–5 examples that best fit those adjectives. Giving the tool every example tends to average them into mush.
-2. **Diverge (15 min).** Get **at least 3 clearly different concepts** before committing to one. The first generation is almost always the most generic. Save screenshots of every concept as you go. Give the tool your chosen lookbook examples along with their notes.
+1. **Brief (5 min).** Agree on who the site is for and how it should *feel*. Pick 3 adjectives, such as "curious, hands-on, local," not "modern and clean." If you have a lookbook, pool it and pick the 3–5 examples that best fit those adjectives. Giving the tool every example tends to average them into mush.
+2. **Diverge (15 min).** Get **at least 3 clearly different concepts** before committing to one. The first generation is almost always the most generic. Save screenshots of every concept as you go. If you have a lookbook, give the tool your chosen examples along with their notes.
 3. **Converge (5 min).** Pick one, or combine the best parts of two. Write down *why*. Getting a second opinion on the plan before you build can save time later (see section 3).
 4. **Build (25 min).** Make every piece of content from `site-content.md` work, including the "TBA" meetup state and the sponsor details.
 5. **Critique and polish (10 min).** Screenshot it, ask the AI to critique it harshly, fix the top 3 issues, and check it at phone width. Common problems to look for:
@@ -69,7 +71,7 @@ Good places to look: **Godly** and **Awwwards** (striking, experimental), **Land
 These are ideas that have worked for other people, not steps to follow. Use whatever suits your tool and your team and skip the rest. Finding out what works is part of the experiment.
 
 - **Give it a real brief.** "Make it look modern" gets you the average of the internet. Tell the tool who the site is for (local developers, tinkerers, curious newcomers), give it your 3 adjectives, name the most important thing on the page (the next meetup and how to join), and say what you *don't* want, such as purple gradients, glassy cards or the default Inter font.
-- **Use your lookbook.** Ask for directions that each lean on a *different* example, so the concepts actually differ. Ask it to capture the feel of an example without copying it.
+- **Use your lookbook,** if you have one. Ask for directions that each lean on a *different* example, so the concepts actually differ. Ask it to capture the feel of an example without copying it.
 - **Ask for options before code.** Several clearly different directions, each with a name, a palette, a font pairing and one signature detail, make the generic one easier to spot. Asking for variety in tone, density or era helps them actually differ.
 - **Compare cheaply.** Rough mockups of just the hero and one section are often enough to choose between directions.
 - **Have it plan first.** Some tools do better when they describe the idea before building it: the mood in one sentence, the order of sections, and a couple of interaction ideas. OpenAI's frontend guidance calls these a visual thesis, a content plan and an interaction thesis.
@@ -83,7 +85,7 @@ These are ideas that have worked for other people, not steps to follow. Use what
 ## 4. Showcase (5 min per team)
 
 1. **Show it.** Demo the site running locally (or in your tool's preview), including a narrow phone-width view.
-2. **The journey.** Show one lookbook example and what it turned into, or a concept you rejected and why.
+2. **The journey.** Show a concept you rejected and why, or a lookbook example and what it turned into.
 3. **Tool verdict.** Where did the tool save you time, where did it fight you, and would you use it again?
 
 Possible awards: **Most striking** · **Best experience on a phone** · **Best use of the tool** · **Best story of what went wrong**
