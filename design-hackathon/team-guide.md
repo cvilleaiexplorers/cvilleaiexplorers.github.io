@@ -10,7 +10,7 @@
 
 ---
 
-## 1. The workflow (60 minutes)
+## 1. Suggested workflow (60 minutes)
 
 1. **Brief (5 min).** Agree on who the site is for and how it should *feel*. Pick 3 adjectives, such as "curious, hands-on, local," not "modern and clean."
 2. **Diverge (15 min).** Get **at least 3 clearly different concepts** before committing to one. The first generation is almost always the most generic. Save screenshots of every concept as you go. If you collected references, give the screenshots to your tool together with your notes.
