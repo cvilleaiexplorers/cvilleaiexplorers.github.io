@@ -3,8 +3,7 @@
 This guide is for team leads. Before the meetup, you choose your team's lane and tool and get it set up. Your team members follow `team-guide.md`.
 
 1. **Choose a lane and tool** from the lanes below. Each team picks one lane and one main tool, so that at the showcase we're comparing *approaches*, not just results. Tell the organizers which one you picked so that teams don't all choose the same tool.
-2. **Set it up** using the [setup checklist](#setup-checklist). If you like, also set up a [team drop folder](#optional-a-team-drop-folder-with-copyparty). Every minute spent signing up or installing on the day comes out of your 60 minutes.
-3. **Brief your team.** Share `team-guide.md`, and tell them whether they need to bring a lookbook (required for Lane D, optional otherwise).
+2. **Set it up** using the [setup checklist](#setup-checklist). If you like, also set up a [team drop folder](#optional-a-team-drop-folder-with-copyparty).
 
 ---
 
