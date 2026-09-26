@@ -99,7 +99,7 @@ Do this before the meetup, on the laptop that will run the tool on the day. Tool
 
 ## Optional: a team drop folder with Copyparty
 
-[Copyparty](https://github.com/9001/copyparty) turns a folder on your laptop into a shared folder on the room Wi-Fi. Teammates open its address in a browser and drag in files (lookbook images, screenshots, exports) without installing anything. The files land on your laptop, ready to give to your tool.
+[Copyparty](https://github.com/9001/copyparty) turns a folder on your laptop into a shared folder on the room Wi-Fi. Teammates open its address in a browser and drag in files (lookbook images, screenshots, exports) without installing anything. The files land on your laptop, ready to give to your tool. Local agents (Lane C) can also read and write the folder over HTTP; see the [client examples](https://github.com/9001/copyparty#client-examples).
 
 Set it up and test it before the meetup:
 
