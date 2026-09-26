@@ -106,7 +106,8 @@ Set it up and test it before the meetup:
 
 1. **Install** Copyparty on your laptop only. The [quickstart](https://github.com/9001/copyparty#quickstart) has a Windows executable, a self-contained Python script and other options.
 2. **Share one disposable folder**, such as `hackathon-share/`, with a team account and a fresh password. See [accounts and volumes](https://github.com/9001/copyparty#accounts-and-volumes).
-3. **Allow incoming connections** on port 3923 if your firewall asks.
-4. **Test it** from a phone or second laptop on the same Wi-Fi: open `http://YOUR-IP:3923/` (your laptop's local IPv4 address), upload a file and download it back.
+3. **Allow incoming connections** on port 3923 if your firewall asks. Each laptop has its own IP address, so every team can use port 3923.
+4. **Find your address.** At startup, Copyparty lists the addresses it's available at. Use the one marked `external`, such as `http://192.168.1.47:3923/`, not `127.0.0.1`. Start it with `--qr` to also show a QR code teammates can scan.
+5. **Test it** from a phone or second laptop on the same Wi-Fi: open that address, upload a file and download it back.
 
 On the day, share the address with your team, keep your laptop awake, and shut the server down afterward. It uses plain HTTP, so keep personal files out of the folder and don't expose the port to the internet.
